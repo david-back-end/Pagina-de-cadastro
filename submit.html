@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-BR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="submit.css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo"><strong>Cadastro</strong></h1>
+        <p id="subtitulo"><strong>complete suas informações</strong></p>
+        <br>
+    </div>
+    <form >
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" id="nome" required name="name">
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" id="sobrenome" nome="sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" id="email" nome="email" requerid>
+        </div>
+        <div class="campo">
+            <label for="sexo"><strong>Qual seu sexo?</strong></label>
+            <label >
+                <input type="radio" name="sexo" value="masculino">Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="femenino"> femenino
+            </label>
+        </div>
+        <fieldset class="grupo">
+            <div id="check">
+                <label for="area"><strong>Quais suas áreas de interesse?</strong></label>
+                <br>
+                <input id="cargo1" type="checkbox" name="area" value="estagio">
+                <label for="cargo1">Estágio</label>
+                <input id="cargo2" type="checkbox" name="area" value="junior">
+                <label for="cargo2">Júnior</label>
+                <input id="cargo3" type="checkbox" name="area" value="pleno">
+                <label for="cargo3">Pleno </label>
+                <input id="cargo4" type="checkbox" name="area" value="senior">
+                <label for="cargo4">Sénior</label>
+            </div>
+        </fieldset>  
+        <div class="campo">
+            <br>
+            <label><strong>Fale sobre você!</strong></label>
+            <textarea name="pessoal" id="pessoal" style="width: 26em;" rows="6"></textarea>
+        </div>
+        <button type="submit" class="botao"><strong>Concluido</strong></button>
+    </form>
+   
+</body>
+</html>
